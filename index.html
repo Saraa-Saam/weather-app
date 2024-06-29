@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/all.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/stylesheet.css" />
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <a class="branding d-flex" href="#">
+        <img src="images/logo@2x.png" alt="logo" class="logo p-2" />
+        <div class="logo-text">
+          <h1 class="title mt-3 p-3">Weather</h1>
+          <small class="description">tagline goes here</small>
+        </div>
+      </a>
+      <nav>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">weather</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+
+
+
+      <!-- <nav>
+            <div class="container d-flex justify-content-between align-items-center flex-row ">
+                <a class="branding d-flex" href="#">
+                    <img src="images/logo@2x.png" alt="logo" class="logo p-2" />
+                    <div class="logo-text">
+                      <h1 class="title mt-3 p-3">Weather</h1>
+                      <small class="description">tagline goes here</small>
+                    </div>
+                  </a>
+        
+                  <ul class="menu list-unstyled">
+                    <li class="menu-item-active-item"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="#">News</a></li>
+                    <li class="menu-item"><a href="#">Live cameras</a></li>
+                    <li class="menu-item"><a href="#">Photos</a></li>
+                    <li class="menu-item"><a href="/contact">Contact</a></li>
+                  </ul>
+      
+    
+            </div>
+
+        </nav> -->
+      <!-- <div
+          class="container d-flex justify-content-between align-items-center flex-row w-75 p-5"
+        >
+          <a class="branding d-flex" href="#">
+            <img src="images/logo@2x.png" alt="logo" class="logo p-2" />
+            <div class="logo-text">
+              <h1 class="title mt-3 p-3">Weather</h1>
+              <small class="description">tagline goes here</small>
+            </div>
+          </a>
+
+          <div class="main-navigation w-50">
+            <button type="button" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="menu list-unstyled">
+              <li class="menu-item-active-item"><a href="/">Home</a></li>
+              <li class="menu-item"><a href="#">News</a></li>
+              <li class="menu-item"><a href="#">Live cameras</a></li>
+              <li class="menu-item"><a href="#">Photos</a></li>
+              <li class="menu-item"><a href="/contact">Contact</a></li>
+            </ul>
+             .menu -->
+      <!-- </div> 
+        </div>  -->
+    </div>
+
+    <!-- end header -->
+    <div class="hero" data-bg-image="images/banner.png" style="background-image: url('images/banner.png')">
+      <div class="container py-5 w-75">
+        <form class="find-location">
+          <input type="text" placeholder="Find your location..." id="search" />
+          <input type="button" value="Find" id="submit" />
+        </form>
+      </div>
+    </div>
+    <!-- end search bar -->
+    <div class="cards-section">
+      <div class="container">
+        <div class="cards-contain" id="cards-container">
+          <div class="today-card col-md-4 col-sm-12">
+            <div class="card-header" id="today">
+              <div class="day">Tuesday</div>
+              <div class="date">25June</div>
+            </div>
+            <!-- .card-header -->
+            <div class="card-content" id="current">
+              <div class="location">Cairo</div>
+              <div class="degree">
+                <div class="num">36.9<sup>o</sup>C</div>
+
+                <div class="card-icon">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="90" />
+                </div>
+              </div>
+              <div class="custom">Sunny</div>
+              <span><img src="https://routeweather.netlify.app/images/icon-umberella@2x.png" alt="" width="21"
+                  height="21" />20%</span>
+              <span><img src="https://routeweather.netlify.app/images/icon-wind@2x.png" alt="" width="23"
+                  height="21" />18km/h</span>
+              <span><img src="https://routeweather.netlify.app/images/icon-compass@2x.png" alt="" width="21"
+                  height="21" />East</span>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="today-card col-md-4 col-sm-12" id="seconde-card">
+            <div class="card-header">
+              <div class="day">Wednesday</div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48" />
+              </div>
+              <div class="degree">41.3<sup>o</sup>C</div>
+              <small>24.8<sup>o</sup></small>
+              <div class="custom">Sunny</div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="today-card col-md-4 col-sm-12">
+            <div class="card-header">
+              <div class="day">Wednesday</div>
+            </div>
+            <div class="card-content">
+              <div class="card-icon">
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48" />
+              </div>
+              <div class="degree">41.3<sup>o</sup>C</div>
+              <small>24.8<sup>o</sup></small>
+              <div class="custom">Sunny</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input type="text" placeholder="Enter your email to subscribe...">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands  fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands  fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands  fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="copy-right">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+  </main>
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

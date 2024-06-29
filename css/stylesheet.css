@@ -1,0 +1,208 @@
+body{
+    
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+.branding{
+    text-decoration: none;
+    background:transparent;
+    
+}
+/* .logo{
+} */
+.logo-text{
+    color: white;
+}
+.title{
+    font-size: 16px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.menu-item-active-item {
+    padding: 3px 25px;
+    border: 2px solid;
+    border-radius: 50px 50px;
+    border-color:#009ad8 ;
+}
+.menu-item-active-item a{
+    text-decoration: none;
+    color: #009ad8;
+}
+.menu-item  a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item :hover{
+    padding: 3px 25px;
+    border: 2px solid;
+    border-radius: 50px 50px;
+    border-color:#009ad8 ;
+    transition: 0.3s;
+color: #009ad8;
+
+}
+
+/* hero */
+.hero{
+    height: 400px;
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+ }
+ .find-location input[type="button"] {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    bottom: 3px;
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+/* cards */
+.cards-contain{
+    width: 100%;
+    background: #323544;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+
+}
+.card-content{
+    align-items: center;
+        text-align: left;
+        padding: 50px 20px 10px;
+}
+#seconde-card{
+  background: rgba(0, 0, 0, 0.1);
+    ;
+}
+.location{
+    font-size: 1rem;
+}
+.degree{
+    font-size: 4rem;
+    color: white;
+    font-weight: 700;}
+.num{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+ sup {
+    top: -0.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.custom{
+    color: #009ad8;
+}
+ span{
+    margin-right: 20px;
+}
+ span img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+/* footer */
+.footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.social-links a{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #1e202b;;
+        color: #009ad8;
+        text-align: center;
+        margin: 5px;
+        padding: 8px;
+        line-height: 2;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        font-size: 20px;
+        font-size: 1.5rem;
+}
+.social-links a:hover {
+    width: 40px;
+    height: 40px;
+    background: #009ad8;
+    color: white;
+}
+.subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+.subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+button, input {
+    line-height: normal;
+}
+.subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
